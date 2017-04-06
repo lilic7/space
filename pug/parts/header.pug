@@ -1,21 +1,25 @@
-- var menuItems = ["home", "about", "contact"]
-- var logoImage = ""
+- var menuItems = ["Home", "About", "Classes", "Contact", "Blog"]
 
 .header
     nav.navbar.navbar-default
         .container
 
             .navbar-header
-                a.navbar-brand(href="#")
-                    img(src=logoImage alt="Logo")
-                button.navbar-toggle(type="button" data-toggle="collapse" data-target="#nav-content")
-                    span.sr-only Toggle navigation
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
+                .row
+                    .col-xs-12
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#nav-content")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
 
-            .collapse.navbar-collapse#nav-content
-                ul.nav.navbar-nav.navbar-right
-                    each it in menuItems
-                        li
-                            a(href="#")= it
+                a.navbar-brand(href="#") Belli & Carrie
+                    span Rehabilitation yoga
+
+            .row
+                .col-xs-12
+                    .collapse.navbar-collapse#nav-content
+                        ul.nav.navbar-nav
+                            each it in menuItems
+                                li
+                                    a(href="#")= it

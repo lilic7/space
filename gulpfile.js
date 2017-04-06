@@ -13,7 +13,7 @@ var browserSync = require("browser-sync").create();
 
 function browser_sync() {
     browserSync.init({
-        proxy: 'template-starter.app',
+        proxy: 'yoga.app',
         files: [
             'public/*.html',
             'public/css/*.css'
