@@ -3,10 +3,14 @@ $brand-color:   rgb(7, 112, 84);
 $second-color:  rgb(153, 250, 153);
 $third-color:   rgb(182, 216, 207);
 
+$accent-color: rgb(255, 255, 255);
 
+$title-color: rgb(33, 165, 30);
 $text-color: rgb(49, 95, 82);
 
 $body-bg: $brand-color;
+
+$content-bg: $accent-color;
 
 $navbar-default-bg: $brand-color;
 $navbar-default-border: $brand-color;
@@ -15,8 +19,9 @@ $navbar-default-brand-color: $second-color;
 $navbar-default-brand-span-color: $third-color;
 $navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%);
 
-$navbar-default-toggle-hover-bg: $second-color;
+$navbar-default-toggle-hover-bg: darken($brand-color, 5%);
 $navbar-default-toggle-icon-bar-bg: $second-color;
 $navbar-default-toggle-border-color: $second-color;
 
-$navbar-default-link-color: $third-color;
+$navbar-default-link-color: $accent-color;
+$navbar-default-link-hover-color: $accent-color;
