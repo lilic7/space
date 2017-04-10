@@ -32,3 +32,8 @@
   }
 }
 
+@mixin navbar-links {
+  text-transform: uppercase;
+  height: 49px;
+  font-size: 1.8rem;
+}

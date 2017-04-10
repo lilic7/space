@@ -1,3 +1,7 @@
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-brand {
   font: 5rem Lato;
   width: 100%;
@@ -69,13 +73,13 @@
     border: 1px solid $second-color;
     background-color: $brand-color;
     opacity: 0.9;
-    margin: 7.5px 0;
+    margin: 0 15px;
+    width: 100%;
 
-    & > li > a, .submenu > li > a {
-      text-transform: uppercase;
-      height: 49px;
+    & > li > a{
+      @include navbar-links;
       padding-top: 15px;
-      font-size: 1.8rem;
+
 
       &:hover{
         background-color: $second-color;
@@ -111,7 +115,8 @@
   display: none;
   width: 100%;
   li{
-    height: 50px;
+    @include navbar-links;
+    padding-top: 2px;
 
     & > a {
       padding-left: 30px;
@@ -142,34 +147,77 @@
   border-left: 1px solid $second-color;
   padding: 0;
   cursor: pointer;
-  background: url('../img/mobile/mobile-collapse.png') no-repeat;
+  background: url('../img/mobile/mobile-expand.png') no-repeat;
 }
 
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 768px){
   .navbar-default {
-    .navbar-nav {
+    .nav{
       border: none;
-      background-color: transparent;
-      width: 100%;
+      background: transparent;
+      opacity: 1;
 
-      & > li {
+      li {
         border: none;
+        background: transparent;
+        min-width: 20%;
+
+        a {
+          text-align: center;
+
+          &:hover {
+            background: transparent;
+            color: $hover-color;
+          }
+
+          &.parent-link {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      position: relative;
+      top: 0;
+    }
+  }
+
+
+
+  .dropdown-icon {
+    display: none;
+  }
+
+  .parent-link {
+    margin: 0;
+  }
+
+  .with-submenu {
+    margin: 0;
+    position: relative;
+
+    &:hover .submenu {
+      display: block;
+
+      & li a{
+        padding: 15px 0;
+        text-align: center;
+        background: $brand-color;
+        border-top: 1px solid $accent-color;
+
+        &:hover {
+          background: $brand-color;
+        } 
       }
     }
   }
 
-  .navbar-collapse {
-    position: relative;
-    top: 0;
-  }
-
-  .parent-link {
-    margin-right: 0 !important;
-  }
-
-  .submenu,
-  .dropdown-icon{
-    display: none;
+  .submenu {
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    padding-top: 1px;
   }
 }
