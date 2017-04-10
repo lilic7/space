@@ -1,7 +1,6 @@
 .navbar-brand {
   font: 5rem Lato;
   width: 100%;
-  text-align: center;
   height: auto;
 
   span {
@@ -75,7 +74,7 @@
     & > li > a, .submenu > li > a {
       text-transform: uppercase;
       height: 49px;
-      padding-top: 2.8%;
+      padding-top: 15px;
       font-size: 1.8rem;
 
       &:hover{
@@ -128,6 +127,10 @@
 
 .navbar-collapse {
   overflow: hidden;
+  position: absolute;
+  z-index: $zindex-navbar;
+  width: 100%;
+  top: 70px;
 }
 
 
@@ -140,4 +143,33 @@
   padding: 0;
   cursor: pointer;
   background: url('../img/mobile/mobile-collapse.png') no-repeat;
+}
+
+
+@media screen and (min-width: 768px){
+  .navbar-default {
+    .navbar-nav {
+      border: none;
+      background-color: transparent;
+      width: 100%;
+
+      & > li {
+        border: none;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    position: relative;
+    top: 0;
+  }
+
+  .parent-link {
+    margin-right: 0 !important;
+  }
+
+  .submenu,
+  .dropdown-icon{
+    display: none;
+  }
 }

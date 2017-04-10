@@ -1,25 +1,28 @@
 .content {
-  background-color: $accent-color;
+  background: $accent-color;
   font-family: "Nixie One", sans-serif;
   color: $title-color;
-  padding-top: 4rem;
+  padding: 4rem 0;
+  margin: 0 15px;
 
-  .tagline {
-    text-align: center;
 
-    h1 {
-      background: url("../img/bg-separator.png") no-repeat center bottom;
-      background-size: 37% auto;
-      padding-bottom: 5rem;
-      font-size: 10rem;
-      line-height: 1em;
-    }
-
-    p {
-      margin-top: 5rem;
-      font-size: 8rem;
-      line-height: 1em;
-    }
+  h1 {
+    background: url("../img/bg-separator.png") no-repeat center bottom;
+    background-size: 37% auto;
+    padding-bottom: 5rem;
+    font-size: 8rem;
+    line-height: 1em;
   }
 
+  p {
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+  img {
+    width: 70%;
+    margin: 10% 15% 0;
+  }
 }
