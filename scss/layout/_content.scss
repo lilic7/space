@@ -31,13 +31,22 @@
   }
 }
 
+h1 {
+  color: $title-color;
+}
+
 h2 {
-  color: $text-color;
-  font-size: 24px;
+  color: $title-color;
+  font-size: 2.4rem;
 }
 
 p {
   color: $text-color;
+  line-height: 2.1;
+  a {
+    text-decoration: underline;
+    color: $text-color;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -168,7 +168,6 @@
 
           &:hover {
             background: transparent;
-            color: $hover-color;
           }
 
           &.parent-link {
@@ -203,13 +202,12 @@
 
       & li a{
         padding: 15px 0;
-        text-align: center;
         background: $brand-color;
         border-top: 1px solid $accent-color;
 
         &:hover {
-          background: $brand-color;
-        } 
+          color: $navbar-default-link-hover-color;
+        }
       }
     }
   }
