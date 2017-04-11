@@ -150,6 +150,12 @@
   background: url('../img/mobile/mobile-expand.png') no-repeat;
 }
 
+
+
+.selected {
+  color: $second-color !important;
+}
+
 @media screen and (min-width: 768px) {
 
   .navbar-default {
@@ -219,3 +225,4 @@
     padding-top: 1px;
   }
 }
+

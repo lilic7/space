@@ -1,0 +1,30 @@
+extends parts/content-no-image
+
+block page-title
+    h1 Contact
+
+block content
+    .row
+        .col-xs-12.col-sm-6.col-sm-offset-3
+            h2 Inquiries
+
+            form.form-group(method="post" action="/contact.html")
+                .row
+                    .col-xs-12
+                        label(for="name") Name
+                        input.form-control(type='text' name="name" id="name")
+                .row
+                    .col-xs-12
+                        label(for="email") Email
+                        input.form-control(type='text' name="email" id="email")
+                .row
+                    .col-xs-12
+                        label(for="subject") Subject
+                        input.form-control(type='text' name="subject" id="subject")
+                .row
+                    .col-xs-12
+                        label(for="message") Message
+                        textarea.form-control(name="name" id="message" rows=10)
+                .row
+                    .col-xs-12
+                        button.btn.btn-primary.pull-right Send

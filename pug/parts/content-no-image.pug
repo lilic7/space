@@ -1,8 +1,9 @@
-extends parts/layout
+extends layout
 
 block main-content
     .container
-        .content
-            .row
-                .col-xs-12.col-sm-7
-                    block content
+        .content.row
+            .col-xs-12
+                block page-title
+            .col-xs-12.col-sm-12
+                block content
