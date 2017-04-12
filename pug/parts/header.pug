@@ -8,7 +8,8 @@
                     span.icon-bar
                     span.icon-bar
 
-                a.col-xs-12.navbar-brand.text-center(href="/") logo
+                a.col-xs-12.navbar-brand.text-center(href="/") Space prospection
+
 
             .row
                 .collapse.row.navbar-collapse#nav-content
@@ -16,8 +17,18 @@
                         li
                             a(href="/") Home
                         li
-                            a(href="") About
+                            a(href="#") About
+                        li.with-submenu
+                            a.parent-link(href="#") Projects
+                            span.dropdown-icon
+                            ul.nav.submenu
+                                li
+                                    a(href="#") Proj 1
+                        li.with-submenu
+                            a.parent-link(href="#") Blog
+                            span.dropdown-icon
+                            ul.nav.submenu
+                                li
+                                    a(href="#") Single post
                         li
-                            a(href="") Contact
-                        li
-                            a(href="") Blog
+                            a(href="#") Contact

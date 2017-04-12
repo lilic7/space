@@ -7,14 +7,14 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    */
 
-  // Core variables and mixins
-  @import "vendor/bootstrap/variables";
-  @import "vendor/bootstrap/mixins";
+// Core variables and mixins
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
 
-  // Reset and dependencies
-  @import "vendor/bootstrap/normalize";
-  @import "vendor/bootstrap/print";
-  @import "vendor/bootstrap/glyphicons";
+// Reset and dependencies
+@import "vendor/bootstrap/normalize";
+@import "vendor/bootstrap/print";
+@import "vendor/bootstrap/glyphicons";
 
 
 
@@ -48,7 +48,7 @@
 //@import "vendor/bootstrap/pager";
 //@import "vendor/bootstrap/labels";
 //@import "vendor/bootstrap/badges";
-@import "vendor/bootstrap/jumbotron";
+//@import "vendor/bootstrap/jumbotron";
 //@import "vendor/bootstrap/thumbnails";
 //@import "vendor/bootstrap/alerts";
 //@import "vendor/bootstrap/progress-bars";
