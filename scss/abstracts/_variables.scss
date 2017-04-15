@@ -4,28 +4,42 @@ $third-color:   rgb(98, 0, 49);
 $forth-color:   rgb(171, 0, 11);
 
 $accent-color: rgb(253, 248, 252);
-$hover-color: rgb(211, 163, 255);
+$hover-color: $accent-color;
 
 $title-color: rgb(33, 165, 30);
 $text-color: rgb(49, 95, 82);
 
 $body-bg: $brand-color;
 
+
 $content-bg: $accent-color;
 
+//marimea containerului
 $container-sm: 100%;
 $container-lg: 970px;
 
+
 $navbar-default-bg: $brand-color;
+$navbar-default-bg-with-alpha: rgba(33, 11, 2, 0.6);
 $navbar-default-border: $brand-color;
 
+
+// se foloseste cand logo e format din text
 $navbar-default-brand-color: $second-color;
 $navbar-default-brand-span-color: $third-color;
 $navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%);
 
-$navbar-default-toggle-hover-bg: $brand-color;
-$navbar-default-toggle-icon-bar-bg: $accent-color;
+
+// setari pentru butonul toggle
+$navbar-default-toggle-bg: $brand-color;
+$navbar-default-toggle-hover-bg: lighten($brand-color, 5%);
+
 $navbar-default-toggle-border-color: $accent-color;
+$navbar-default-toggle-border-hover-color: $accent-color;
+
+$navbar-default-toggle-icon-bar-bg: $accent-color;
+
+$navbar-nav-default-border-color: $accent-color;
 
 $navbar-default-link-color: $accent-color;
 $navbar-default-link-hover-color: $hover-color;
